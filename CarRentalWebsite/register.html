@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+  <style>
+    input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: block;
+    border: none;
+    background: #f1f1f1;
+    }
+    input:focus {
+    background-color: #ddd;
+    outline: none;
+    }
+    .registerbtn {
+    background-color: #1c87c9;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  .registerbtn:hover {
+  opacity:1;
+  }
+
+    </style>
+</head>
+
+<body>
+  <div id="main">
+  
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html"><span class="logo_colour">Register</span></a></h1>
+          <h2>Register As a Member to Book Your Ideal Car</h2>
+        </div>
+      </div>
+	  
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="selected"><a href="register.html">Register</a></li>
+          <li><a href="booking.html">New Booking</a></li>
+          <li><a href="packages.php">Check Packages</a></li>
+          <li><a href="vehicles.php">Check Vehicles</a></li>
+        </ul>
+      </div>  
+    </div>
+	
+    <div id="content_header"></div>
+    <div id="site_content">
+	
+    <div class="sidebar">
+        <h4>Need Help?</h4>
+        <h5>Contact Us</h5>
+        <p>Rent-A-Car (Pvt) Ltd,<br> 181, Mahara, Kadawatha,<br>Sri Lanka.</p>
+		<p> Hotlines: <br>
+			+94 11 5 655 655 <br>
+			+94 777 363 363 </p>
+
+		<p> Fax: +94 11 5 402 578 </p>
+		<p> Email: info@rentacar.com</p>
+    </div>
+	  
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Registration Form</h1>
+        <p>Please Fill In this Form</p> <hr>
+		
+        <div class="form_settings">
+		
+            <form action="new_cx.php" method="post">
+
+				<label for="nic"><b>NIC Number</b></label>
+				<input type="text" placeholder="Enter nic" name="nic" id="nic" required>
+
+				<label for="f_name"><b>First Name</b></label>
+				<input type="text" placeholder="Enter your First Name" name="f_name" id="f_name" required>
+
+				<label for="m_name"><b>Middle Name</b></label>
+				<input type="text" placeholder="Enter your Middle Name" name="m_name" id="m_name" >
+
+				<label for="l_name"><b>Last Name</b></label>
+				<input type="text" placeholder="Enter your Last Name" name="l_name" id="l_name" required>
+
+				<label for="address"><b>Address</b></label>
+				<input type="text" placeholder="Enter address" name="address" id="address" required>
+
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+				<label for="driving_license"><b>Driving License Number</b></label>
+				<input type="text" placeholder="Enter Driving License Number" name="driving_license" id="driving_license_no" required multiple>
+
+				<button type="submit" class="registerbtn">Register</button>
+			</form>
+        </div>
+    
+      </div>
+	  
+    </div>
+	
+    <div id="content_footer"></div>
+    <div id="footer">
+      Copyright &copy; Rent-A-Car (Pvt) Ltd. All Rights Reserved.
+    </div>
+	
+  </div>
+  
+  
+</body>
+</html>
