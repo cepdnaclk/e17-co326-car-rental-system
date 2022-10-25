@@ -40,8 +40,7 @@ NOTE - * We have used 'localhost' as username and '' as password. You may change
                          $password = "";  
                          $database = 'RENT_A_CAR';
                          $servername='localhost'; 
-
-              Then save the file. 
+	Then save the file. 
 
 
 ## Team
